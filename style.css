@@ -837,7 +837,7 @@ color:#FFFFFF;
   position: absolute;
   left: calc(1.62vw + 4.8px);
   bottom:calc(0.56vw + 8.2px);
-  color:red;
+  color:#F2F60F;
   font-family: 'Qanelas', sans-serif;
   font-size: calc(0.31vw + 9px);
   font-weight: 500;
@@ -865,7 +865,7 @@ color:#FFFFFF;
   color:gray;
   z-index: 1;
 }
-/* .popular_cardPersons span:nth-child(4){
+.popular_cardPersons span:nth-child(4){
   position: absolute;
   top: calc(0.43vw + 3.6px);
   left: calc(0.68vw + 2.8px);
@@ -874,4 +874,4 @@ color:#FFFFFF;
   font-weight: 500;
   line-height: 20px;
   color:#F2F60F;
-} */
+}
