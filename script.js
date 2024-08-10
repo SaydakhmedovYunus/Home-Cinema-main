@@ -50,6 +50,12 @@ let openWindow_4 = document.querySelector('.menu_4');
 openWindow_4.addEventListener('click', openFourthMenu);
 function openFourthMenu() {
   console.log('Отобразлились все популярные персоны');
-  
-  
+  let window_4 = document.querySelector('.window_4').style.display = 'block'
+}
+
+let closeWindow_4 = document.querySelector('.close_4')
+closeWindow_4.addEventListener('click', closeFourthMenu);
+
+function closeFourthMenu(){
+ let window_4 = document.querySelector('.window_4').style.display = 'none'
 }
