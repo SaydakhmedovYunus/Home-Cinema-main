@@ -44,3 +44,12 @@ closeWindow_3.addEventListener('click', closeThirdMenu);
 function closeThirdMenu() {
   let window_3 = document.querySelector('.window_3').style.display = 'none';
 }
+
+
+let openWindow_4 = document.querySelector('.menu_4');
+openWindow_4.addEventListener('click', openFourthMenu);
+function openFourthMenu() {
+  console.log('Отобразлились все популярные персоны');
+  
+  
+}
