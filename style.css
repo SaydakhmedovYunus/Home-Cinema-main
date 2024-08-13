@@ -732,7 +732,7 @@ div.scroll-container::-webkit-scrollbar-thumb {
 
 @media (max-width:1920px) {
   .splide__pagination {
-    top: 550px;
+    top: 490px;
     bottom: 0 !important;
   }
 }
@@ -810,17 +810,24 @@ color:#FFFFFF;
 }
 .popular_person_cards {
   margin-top: 20px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   justify-content: center;
-  gap: 10px;
-  align-items:center;
+  align-content: center;
+}
+@media (max-width:600px) {
+  .popular_person_cards {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr) ;
+  }
 }
 .popular_cardPersons {
   background-image:url(./img/quentin.png);
   background-repeat:no-repeat;
   background-size:cover;
-  width: calc(16.5vw + 126px);
   height:calc(16.5vw + 126px);
   position: relative;
   border-radius:12px;
@@ -829,7 +836,6 @@ color:#FFFFFF;
   background-image:url(./img/statham.png);
   background-repeat:no-repeat;
   background-size:cover;
-  width: calc(16.5vw + 126px);
   height:calc(16.5vw + 126px);
   position: relative;
 }
@@ -916,4 +922,58 @@ color:#FFFFFF;
 .buttons_4 button:hover {
   color:#FFFFFF;
   transition: 0.5s;
+}
+
+.actors_count {
+  padding: 20px;
+  height: 380px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color:#1B2133;
+  gap: 14px;
+}
+.actors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  border-bottom: 1px solid #1E2538;
+  padding-bottom: 5px;
+}
+.actors_data {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.actors_data h4 {
+  font-family: 'Qanelas', sans-serif;
+  font-size: calc(0.31vw + 14px);
+  font-weight: 700;
+  line-height: 24.78px;
+  text-align: left;
+  color:#FFFFFF;
+}
+.actors_data span {
+  font-family: 'Qanelas', sans-serif;
+  font-size: calc(0.25vw + 10.2px);
+  font-weight: 600;
+  line-height: 18.35px;
+  text-align: left;
+  color:#3B486B;
+}
+.actors_data h5 {
+  font-family: 'Qanelas', sans-serif;
+  font-size: calc(0.18vw + 10.4px);
+  line-height: 16.66px;
+  text-align: left;
+  color:#F2F60F;
+}
+.places span {
+  font-family: 'Qanelas', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18.35px;
+  text-align: left;
+  color:#F2F60F;
 }
