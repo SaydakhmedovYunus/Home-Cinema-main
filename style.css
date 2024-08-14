@@ -816,7 +816,7 @@ color:#FFFFFF;
   justify-content: center;
   align-content: center;
 }
-@media (max-width:600px) {
+@media (max-width:700px) {
   .popular_person_cards {
     margin-top: 20px;
     display: grid;
@@ -828,7 +828,7 @@ color:#FFFFFF;
   background-image:url(./img/quentin.png);
   background-repeat:no-repeat;
   background-size:cover;
-  height:calc(16.5vw + 126px);
+  height:100%;
   position: relative;
   border-radius:12px;
 }
@@ -836,8 +836,13 @@ color:#FFFFFF;
   background-image:url(./img/statham.png);
   background-repeat:no-repeat;
   background-size:cover;
-  height:calc(16.5vw + 126px);
+  height:100%;
   position: relative;
+}
+@media (max-width:500px) {
+  .popular_cardPersons {
+    height: 250px;
+  }
 }
 .popular_cardPersons span:nth-child(1){
   position: absolute;
@@ -926,7 +931,6 @@ color:#FFFFFF;
 
 .actors_count {
   padding: 20px;
-  height: 380px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -977,3 +981,162 @@ color:#FFFFFF;
   text-align: left;
   color:#F2F60F;
 }
+.news_wrapper {
+  margin: 0 calc(14vw - 25px);
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+}
+.last_news {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.last_news h1 {
+  font-family: 'Qanelas', sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  text-align: left;
+  color:#FFFFFF;
+}
+
+.last_news a {
+  text-decoration: none;
+  font-family: 'Qanelas', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27.26px;
+  color:gray;
+  cursor: pointer;
+
+}
+.last_news a:hover {
+  color:#FFFFFF;
+  transition: 0.5s;
+}
+@media (max-width: 600px){
+  .last_news h1 {
+      font-size: 20px;
+  }
+  .last_news {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+  }
+  .last_news a {
+    font-size: 15px;
+  }
+}
+
+/* splideShow start */
+  /* img {
+    vertical-align: middle;
+  } */
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  /* .container {
+    margin-top: 79px;
+    position: relative;
+  } */
+  
+  /* Hide the images by default */
+  /* .mySlides {
+    display: none;
+    background-image: url(./img/gun.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 772px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  } */
+  /* .mySlides  {
+    display: flex;
+  } */
+  /* .datatext {
+    display: flex;
+    flex-direction: column;
+  } */
+  /* .datatext p {
+    font-family: 'Qanelas', sans-serif;
+font-size: 20px;
+font-weight: 500;
+line-height: 34.04px;
+text-align: left;
+
+  } */
+  /* Add a pointer when hovering over the thumbnail images */
+  /* .cursor {
+    cursor: pointer;
+  } */
+  
+  /* Next & previous buttons */
+  /* .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  } */
+  
+  /* Position the "next button" to the right */
+  /* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  } */
+  
+  /* On hover, add a black background color with a little bit see-through */
+  /* .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  } */
+  
+  /* Number text (1/3 etc) */
+  /* .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  } */
+  
+  /* Container for image text */
+  /* .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+  
+  /* Six columns side by side */
+  /* .column {
+    float: left;
+    width: 16.66%;
+  } */
+  
+  /* Add a transparency effect for thumnbail images */
+  /* .demo {
+    opacity: 0.6;
+  } */
+  
+  /* .active,
+  .demo:hover {
+    opacity: 1;
+  } */
