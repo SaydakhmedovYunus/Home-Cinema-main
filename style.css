@@ -1031,50 +1031,74 @@ color:#FFFFFF;
   }
 }
 
-/* splideShow start */
-  /* img {
+splideShow start */
+   img {
     vertical-align: middle;
-  } */
+  }
   
   /* Position the image container (needed to position the left and right arrows) */
-  /* .container {
-    margin-top: 79px;
+.container {
+    margin-top: calc(3.62vw + 9.4px);
     position: relative;
-  } */
+  }
   
   /* Hide the images by default */
-  /* .mySlides {
+.mySlides {
     display: none;
-    background-image: url(./img/gun.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 772px;
+    background-position-x: center;
+    width: 1159px;
+    height: calc(32.9vw + 139.6px);    
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    padding: 32px;
+  }
+  @media(max-width:800px){
+    .mySlides {
+      background-size:cover;
+      border-radius:12px;
+    }
+    .datatext h1 {
+      display: block;
+    }
+    .datatext p {
+      display: none;
+    }
+  }
+  .mySlides  {
+    width: 100%;
+    display: flex;
+  }
+  .datatext {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-  } */
-  /* .mySlides  {
-    display: flex;
-  } */
-  /* .datatext {
-    display: flex;
-    flex-direction: column;
-  } */
-  /* .datatext p {
+    gap: 14px;
+  }
+  .datatext h1 {
     font-family: 'Qanelas', sans-serif;
-font-size: 20px;
-font-weight: 500;
-line-height: 34.04px;
-text-align: left;
-
-  } */
+    font-size: calc(2.31vw + 12.6px);
+    font-weight: 900;
+    line-height: 100.5%;
+    text-align: left;
+    color:#FFFFFF;
+  }
+  .datatext p {
+    font-family: 'Qanelas', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34.04px;
+    text-align: left;
+    color:#FFFFFF;
+  }
   /* Add a pointer when hovering over the thumbnail images */
-  /* .cursor {
+  .cursor {
     cursor: pointer;
-  } */
+  }
   
   /* Next & previous buttons */
-  /* .prev,
+  .prev,
   .next {
     cursor: pointer;
     position: absolute;
@@ -1088,55 +1112,75 @@ text-align: left;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  } */
+  }
   
   /* Position the "next button" to the right */
-  /* .next {
+  .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  } */
+  }
   
   /* On hover, add a black background color with a little bit see-through */
-  /* .prev:hover,
+  .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  } */
+  }
   
   /* Number text (1/3 etc) */
-  /* .numbertext {
+   .numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  } */
+  } 
   
   /* Container for image text */
-  /* .caption-container {
+   .caption-container {
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
     color: white;
   }
-  
+  .row {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
   .row:after {
     content: "";
     display: table;
     clear: both;
-  } */
+  }
   
   /* Six columns side by side */
-  /* .column {
+   .column {
     float: left;
     width: 16.66%;
-  } */
-  
+    border-radius:12px;
+  }
+  @media(max-width:600px) {
+    .row {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+    }
+    .column {
+      float: left;
+      width: 30.66%;
+      border-radius:12px;
+    }
+  }
   /* Add a transparency effect for thumnbail images */
-  /* .demo {
+   .demo {
     opacity: 0.6;
   } */
   
-  /* .active,
+   .active,
   .demo:hover {
     opacity: 1;
-  } */
+  }
