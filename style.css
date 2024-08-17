@@ -1238,4 +1238,10 @@ splideShow start */
   .all_the_world_nav span {
     display: none;
   }
+
+}
+@media (max-width:1920px) {
+  .window_5 {
+    display: none;
+  }
 }
