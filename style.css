@@ -103,7 +103,7 @@ nav a:hover{
 .search_side a img {
   width: calc(0.25vw + 10.2px);
 }
-.search_side button {
+.search_side a:nth-child(2) {
   width: calc(4.5vw + 51.6px);
   height: calc(1.625vw + 21.8px);
   border-radius: 10px;
