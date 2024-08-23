@@ -170,7 +170,7 @@ display: none;
   }
 }
 @media (max-width:500px) {
-   .search_side a {
+   .search_side a:nth-child(1) {
     display: none;
    }
    .search_side_2 {
