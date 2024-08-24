@@ -107,9 +107,9 @@ nav a:hover{
   width: calc(4.5vw + 51.6px);
   height: calc(1.625vw + 21.8px);
   border-radius: 10px;
-  background-color:#3657CB;
+  background-color: #FF0000;
   border:none;
-  box-shadow: 0px 0px 15px 0px #4871FFCC;
+  box-shadow: 0px 0px 15px 0px rgba(255, 0, 0, 0.8); /* Красная тень */
   font-family: 'Qanelas', sans-serif;
   font-size: calc(0.3125vw + 10px);
   font-weight: 700;
@@ -117,6 +117,7 @@ nav a:hover{
   text-align: center;
   color:#FFFFFF;
   cursor: pointer;
+  text-decoration: none;
 }
 .secondary_heading {
   margin-top: calc(1.5625vw + 21px);
@@ -451,11 +452,12 @@ display: none;
   align-items:center;
 }
 .likes {
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
 }
 .likes div {
   display: flex;
@@ -1351,4 +1353,13 @@ footer .privacy {
 footer .privacy:hover{
   color:#FFFFFF;
   transition: 1s;
+}
+
+.marks {
+  cursor: pointer;
+  filter: brightness(50%); /* Затемняет изображение на 50% */
+}
+.marks:hover{
+  transition: 0.5s;
+  filter: brightness(100%); /* Затемняет изображение на 50% */
 }
