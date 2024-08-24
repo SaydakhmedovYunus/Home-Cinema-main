@@ -64,5 +64,5 @@ if (localStorage.getItem('loggedIn') !== 'true') {
 }
 document.getElementById('logout').addEventListener('click', function(){
   localStorage.removeItem('loggedIn');
-  window.location.href = 'login.html';
+  window.location.href = '../pages/LoginPage.html';
 });
