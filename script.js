@@ -60,9 +60,9 @@ function closeFourthMenu(){
  let window_4 = document.querySelector('.window_4').style.display = 'none'
 }
 if (localStorage.getItem('loggedIn') !== 'true') {
-  window.location.href = '../pages/LoginPage.html';
+  window.location.href = './pages/LoginPage.html';
 }
 document.getElementById('logout').addEventListener('click', function(){
   localStorage.removeItem('loggedIn');
-  window.location.href = '../pages/LoginPage.html';
+  window.location.href = './pages/LoginPage.html';
 });
