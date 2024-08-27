@@ -13,7 +13,7 @@ body {
 .main_film_wrapper {
     margin: 0 calc(14vw - 25px);
     margin-bottom: 61px;
-    margin-top: 65px;
+    margin-top: 20px;
 }
 .main_film {
     display: flex;
@@ -43,6 +43,8 @@ body {
 .way_to_the_film{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items:center;
     gap: calc(0.5vw + 5.4px);
 }
 .way_to_the_film a{
@@ -172,7 +174,7 @@ body {
 .watch_the_movie button {
     background-color:transparent;
     width: 260px;
-    height: 71px;
+    height: calc(1.31vw + 45.8px);
     border:2px solid #FFFFFF;
     border-radius:5px;
     font-family: 'Qanelas', sans-serif;
@@ -224,7 +226,7 @@ body {
 .wrapper_progress {
     background-color:#111520;
     width: 185px;
-    height: 59px;
+    height: calc(1.5vw + 30.2px);
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -258,9 +260,11 @@ body {
 @media (max-width:900px) {
     .raitings {
         justify-content: center;
+        align-items:center;
     }
 }
 .marks {
+    width: calc(1.75vw + 24.4px);
     cursor: pointer;
     filter: brightness(50%); /* Затемняет изображение на 50% */
 }
@@ -291,7 +295,7 @@ body {
 }
 .primary_info_1 div h4 {
     font-family: 'Qanelas', sans-serif;
-    font-size: 18px;
+    font-size: calc(0.18vw + 14.4px);
     font-weight: 600;
     line-height: 22.01px;
     color:#FFFFFF;
@@ -299,7 +303,7 @@ body {
 }
 .primary_info_1 div span {
     font-family: 'Qanelas', sans-serif;
-    font-size: 18px;
+    font-size: calc(0.18vw + 14.4px);
     font-weight: 500;
     line-height: 21.73px;
     color:#F2F60F;
@@ -320,14 +324,14 @@ body {
 }
 .secondary_info div h4 {
     font-family: 'Qanelas', sans-serif;
-    font-size: 18px;
+    font-size: calc(0.18vw + 14.4px);
     font-weight: 600;
     line-height: 22.01px;
     color:#FFFFFF;
 }
 .secondary_info div span {
     font-family: 'Qanelas', sans-serif;
-    font-size: 18px;
+    font-size: calc(0.18vw + 14.4px);
     font-weight: 500;
     line-height: 21.73px;
     color:#F2F60F;
@@ -438,7 +442,7 @@ body {
     }
 }
 .premiers_wrapper {
-    margin-top: 90px;
+    margin-top: calc(3.75vw + 18px);
     display: grid;
     grid-template-columns: repeat(9,1fr);
     gap: 15px;
@@ -495,18 +499,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
 }
 .movie_side h1 {
     font-family: 'Qanelas', sans-serif;
-        font-size: 55px;
+        font-size: calc(2.5vw + 7px);
         font-weight: 900;
         color:#FFFFFF;
 }
 .movie_side a {
-    font-family: Qanelas;
-        font-size: 22px;
+    font-family: 'Qanelas', sans-serif;
+        font-size: calc(0.43vw + 13.6px);
         font-weight: 700;
         line-height: 27.26px;
         text-align: left;
@@ -526,15 +530,9 @@ body {
 }
 @media (max-width:800px) {
     .movie_side {
-        justify-content: center;
+        justify-content: space-between;
             align-items: center;
-            gap: 15px;
-    }
-    .movie_side h1 {
-        font-size: 20px;
-    }
-    .movie_side a {
-        font-size: 17px;
+            gap: 10px;
     }
     .down_socials h3{
         font-size: 13px;
@@ -556,7 +554,119 @@ body {
     width: 116px;
     height: 14px;
 }
-.likes div img {
-    width: 30px;
-    height: 30px;
+
+.medals_wrapper {
+    margin: 0 calc(14vw - 25px);
+    margin-bottom: 61px;
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.medals_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+
+}
+.medals_navigation h2 {
+    font-family: 'Qanelas', sans-serif;
+    font-size: calc(2.5vw + 7px);
+    font-weight: 900;
+    color:#FFFFFF;
+}
+.medals_navigation a {
+    font-size: calc(0.43vw + 13.6px);
+    color:#FFFFFF;
+    font-family: "Qanelas", sans-serif;
+    text-decoration: none;
+}
+.nominations {
+    overflow: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 10px;
+}
+
+.nominations::-webkit-scrollbar {
+    width: 100%;
+    height: 5px;
+}
+
+.nominations::-webkit-scrollbar-track {
+    background: #383b45;
+}
+
+.nominations::-webkit-scrollbar-thumb {
+    background: #de1010;
+    border-radius: 10px;
+}
+.medal_card {
+    background-color:#3657CB4D;
+    border-radius:12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    gap: 26px;
+
+}
+@media (max-width:900px) {
+    .medal_card {
+        height: 125px;
+    }
+}
+
+.medal {
+    width: 189px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+@media (max-width:900px) {
+    .medal_card img{
+        width: 30px;
+    }
+}
+.medal span:nth-child(1) {
+    font-family: 'Qanelas', sans-serif;
+    font-size: 14px;
+    line-height: 16.66px;
+    color:#FFFFFF;
+}
+.medal span:nth-child(2) {
+    font-family: 'Qanelas', sans-serif;
+    font-size: 14px;
+    line-height: 16.66px;
+    color:#F2F60F;
+}
+.medal span:nth-child(3) {
+    font-family: 'Qanelas', sans-serif;
+    font-size: 14px;
+    line-height: 16.66px;
+    color:rgb(103, 101, 101);
+}
+.posters_wrapper {
+    margin: 0 calc(14vw - 25px);
+    margin-bottom: 61px;
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.secondary_image {
+    border-radius:12px;
+    width: 100%;
+    height:100%;
+}
+
+@media (max-width: 400px) {
+    .splide__pagination {
+        top: 200px !important;
+        bottom: 0 !important;
+    }
 }
