@@ -451,44 +451,7 @@ display: none;
   justify-content: center;
   align-items:center;
 }
-.likes {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-.likes div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  justify-content: center;
-  align-items: center;
-}
-.likes div span {
-  font-family: 'Qanelas', sans-serif;
-  font-size: calc(0.375vw + 7.8px);
-  line-height: 17.85px;
-  text-align: left;
-  color: #FFFFFF;
-}
-.likes div button{
-  background-size: contain;
-  background-color: #1B2133;
-  border: none;
-  width: calc(1.75vw + 24.4px);
-  height: 30px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.likes div button img {
-  width: calc(0.81vw + 10.4px);
-  height: 13.45px;
-}
+
 
 div.scroll-container {
   display: flex;
