@@ -1323,3 +1323,26 @@ footer .privacy:hover{
   transition: 0.5s;
   filter: brightness(100%); /* Затемняет изображение на 50% */
 }
+
+.likes {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+.likes div {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 3px;
+}
+.likes div img {
+  width: calc(1.75vw + 24.4px);
+}
+.likes div span {
+  font-family: 'Qanelas', sans-serif;
+  font-size: 15px;
+  line-height: 17.85px;
+  color:#FFFFFF;
+}
